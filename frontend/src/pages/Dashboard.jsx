@@ -17,10 +17,12 @@ import EventIcon from '@mui/icons-material/Event'
 import SmartToyIcon from '@mui/icons-material/SmartToy'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import api from '../services/api'
+import ChatAssistant from '../components/ChatAssistant'
 
 function Dashboard() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [chatOpen, setChatOpen] = useState(false)
 
   useEffect(() => {
     fetchDashboardData()
@@ -205,6 +207,7 @@ function Dashboard() {
               <Button
                 fullWidth
                 variant="contained"
+                onClick={() => setChatOpen(true)}
                 sx={{
                   textTransform: 'none',
                   borderRadius: 2
@@ -217,6 +220,11 @@ function Dashboard() {
         </Grid>
 
       </Grid>
+      
+      <ChatAssistant
+          open={chatOpen}
+          onClose={() => setChatOpen(false)}
+          />
     </Box>
   )
 }

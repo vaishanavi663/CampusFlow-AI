@@ -102,7 +102,7 @@ function Documents() {
       setSelectedDoc(null)
       setSelectedFile(null)
       setFileUrl('')
-      fetchDocuments()
+     await fetchDocuments()
     } catch (error) {
       console.error('Upload failed:', error)
       alert(error.response?.data?.detail || 'Upload failed')
