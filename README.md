@@ -1,4 +1,14 @@
-# 🚀 CampusFlow AI – Intelligent Student Onboarding Orchestration Platform
+<h1 align="center">✨ CampusFlow AI – Intelligent Student Onboarding Orchestration Platform</h1>
+
+<p align="center">
+<img src="https://img.shields.io/badge/FastAPI-00d4a8?style=for-the-badge">
+<img src="https://img.shields.io/badge/React-60b8ff?style=for-the-badge">
+<img src="https://img.shields.io/badge/MongoDB-00d4a8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Gemini%20AI-ff6b9d?style=for-the-badge">
+<img src="https://img.shields.io/badge/JWT-ffb347?style=for-the-badge">
+</p>
+
+---
 
 A complete production-ready full-stack application for managing student onboarding processes with AI-powered assistance.
 
